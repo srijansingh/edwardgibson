@@ -1,0 +1,174 @@
+.hello{
+    position:fixed;
+    top:5px;
+    left:5px;
+    color:red;
+    padding:4px;
+    background:white;
+    height:24px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hello .big{
+    width:30px;
+    padding:2px;
+    background:black;
+    border-radius: 4px;
+    
+}
+
+.hello .sml{
+    width:20px;
+    padding:2px;
+    background:black;
+    border-radius: 4px;
+}
+
+.hello .med{
+    width:25px;
+    padding:2px;
+    background:black;
+    border-radius: 4px;
+}
+.cross{
+    position:absolute;
+    right:0px;
+    top:5px;
+    color:red;
+}
+.cross1{
+    width:30px;
+    padding: 2px;
+    transform:rotate(45deg);
+    color:white
+}
+
+.cross2{
+    width:30px;
+    padding: 2px;
+    transform:rotate(-45deg);
+    color:white
+}
+.aside{
+    background-color:#000;
+    position:fixed;
+    width:280px;
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding:40px 0;
+}
+
+.asideopen{
+    background-color:#000;
+    position:fixed;
+    width:280px;
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding:40px 0;
+}
+
+.logo{
+    text-align: center;
+    font-weight: 800 !important;
+    
+}
+
+.logo img{
+    height:160px;
+    height:160px;
+}
+
+.logo h1{
+    font-weight: 800;
+}
+
+
+.ul{
+    display:flex;
+    flex-direction:column;
+    min-height:25vh;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.link{
+    text-decoration:none;
+    color:white;  
+}
+.link:hover{
+    color:#ffff00;
+}
+.active{
+    color:#ffff00;
+    font-weight:bold;
+}
+
+.followUs{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+.followUsNetworks{
+    display:flex;
+    width:100%;
+    width:200px;
+    justify-content:space-between;
+}
+
+.followUsNetworks a{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:2px solid #ffff00;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin:0 3px;
+    align-items: center;
+}
+
+.followUsNetworks a:hover{
+    background-color:white;
+}
+.followUsNetworks i{
+    font-size: 1.3rem;
+    color: #ffff00;
+}
+.followUsNetworks a:hover i{
+    color:black;
+}
+
+@media only screen and (min-width:1000px){
+    .hello{
+        display:none;
+    }
+    .asideopen{
+        display:none;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .aside{
+       display:none;
+    }
+
+    /* main{
+        margin-left: 0;
+    }
+
+    footer{
+       margin-left: 0;
+    } */
+}
