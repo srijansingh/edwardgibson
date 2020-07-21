@@ -29,10 +29,10 @@ function HomePage(props) {
                 </div>
             </div>
             <h1>
-                About Us
+                About Edgiav
             </h1>
             <p>
-                Once a player is always a player irrespective of place,things,situation.Real player is not afraid of loosing, he is afraid of not playing the games, he is afraid of not taking the whole responsibility.
+            Clicking can be a passion, can be a hobby, can be any random job. But, what’s more important is CLICKING. 
             </p>
         </header>
         
@@ -42,15 +42,16 @@ function HomePage(props) {
             </div>
             <div className="right">
                 <h3>
-                    Edgiav Photography
+                    Edgiav 
                 </h3>
                 <p>
-                    Photography Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                
+                It has been quite a time looking through the camera, capturing frames, but the perspective still remains the same. To capture a moment.  To describe a story.
                 </p>
                 <ul >
-                    <li >Even the all-powerful Pointing has no control about the blind texts</li>
-                    <li>One day however a small line of blind text by the name of Lorem Ipsum decided</li>
-                    <li>The Big Oxmox advised her not to do so, because there were thousands</li>
+                    <li >Giving personal tips to budding photographers. </li>
+                    <li>Editing tutorials via blogs.</li>
+                    <li>Creating a portfolio.</li>
                 </ul>
                 <div className="socialMedia">
                     <i className="fab fa-facebook-f " ></i>
@@ -58,7 +59,8 @@ function HomePage(props) {
                     <i className="fab fa-instagram " ></i>
                 </div>
             </div>
-            
+           
+
         </div>
         
         <div className="card-container">
