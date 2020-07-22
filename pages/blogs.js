@@ -8,12 +8,29 @@ const Blog = withRouter((props)=> {
 
     const title = props.data.data.title;
     const content = props.data.data.content;
+    const imagelink = props.data.data.imagelink;
     return (
 
 
       <Layout>
           <Head>
               <title>{title}</title>
+              <meta name="title" content={title} />
+          <meta name="description" content={ReactHtmlParser(content)} />
+
+         
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://edgiav.com/" />
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={ReactHtmlParser(content)} />
+          <meta property="og:image" content={imagelink} />
+
+          <meta property="twitter:card" content="website" />
+
+          <meta property="twitter:url" content="https://edgiav.com/" />
+          <meta property="twitter:title" content={title} />
+          <meta property="twitter:description" content={ReactHtmlParser(content)} />
+          <meta property="twitter:image" content={imagelink} />
               <script src="https://kit.fontawesome.com/a000f9134d.js" crossorigin="anonymous"></script>
           </Head>
            <header className="header">

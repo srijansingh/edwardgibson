@@ -9,6 +9,20 @@ function HomePage(props) {
       <Layout>
           <Head>
               <title>Contact</title>
+              <meta name="title" content="Contact Edgiav" />
+          <meta name="description" content="Address Regency Enclave, Raseora Sitapur-261001 E-mail eddworld29@gmail.com Phone Number +91 6392361319" />
+
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://edgiav.com/" />
+          <meta property="og:title" content="Edgiav Contact" />
+          <meta property="og:description" content="Address Regency Enclave, Raseora Sitapur-261001 E-mail eddworld29@gmail.com Phone Number +91 6392361319" />
+          <meta property="og:image" content="/logo/logo.png" />
+
+          <meta property="twitter:card" content="website" />
+          <meta property="twitter:url" content="https://edgiav.com/" />
+          <meta property="twitter:title" content="Edgiav Contact" />
+          <meta property="twitter:description" content="Address Regency Enclave, Raseora Sitapur-261001 E-mail eddworld29@gmail.com Phone Number +91 6392361319" />
+          <meta property="twitter:image" content="/logo/logo.png" />
               <script src="https://kit.fontawesome.com/a000f9134d.js" crossorigin="anonymous"></script>
           </Head>
            <header className="header">

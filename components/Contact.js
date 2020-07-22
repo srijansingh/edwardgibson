@@ -10,7 +10,7 @@ class Contact extends Component {
         return (
                 <div>
                     <div className={styles.mains}>
-                        
+                    
                         <div className={styles.info}>
                             <div className={styles.information}>
                                 <span className={styles.bold}>Address</span><br />

@@ -19,6 +19,21 @@ function HomePage(props) {
       <Layout>
           <Head>
               <title>Blog</title>
+              <meta name="title" content="Blog Edgiav" />
+          <meta name="description" content="Clicking can be a passion, can be a hobby, can be any random job. But, what’s more important is CLICKING." />
+
+         
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://edgiav.com/" />
+          <meta property="og:title" content="Edgiav Blog" />
+          <meta property="og:description" content="Clicking can be a passion, can be a hobby, can be any random job. But, what’s more important is CLICKING." />
+          <meta property="og:image" content="/logo/logo.png" />
+
+          <meta property="twitter:card" content="website" />
+          <meta property="twitter:url" content="https://edgiav.com/" />
+          <meta property="twitter:title" content="Edgiav Blog" />
+          <meta property="twitter:description" content="Clicking can be a passion, can be a hobby, can be any random job. But, what’s more important is CLICKING." />
+          <meta property="twitter:image" content="/logo/logo.png" />
               <script src="https://kit.fontawesome.com/a000f9134d.js" crossorigin="anonymous"></script>
           </Head>
            <header className="header">
