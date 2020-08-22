@@ -108,6 +108,7 @@ function HomePage(props) {
                 display:flex;
                 flex-direction:row;
                 flex-wrap:wrap;
+                padding-bottom:50px
             }
 
             
@@ -119,7 +120,7 @@ function HomePage(props) {
   HomePage.getInitialProps = async function() {
       
    try{
-    const res = await fetch('http://edserver.herokuapp.com/api/blog');
+    const res = await fetch('https://api.edgiav.com/api/blog');
     const data = await res.json();
     return {
         data

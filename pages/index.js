@@ -47,7 +47,7 @@ function HomePage(props) {
   }
   
   HomePage.getInitialProps = async function() {
-    const res = await fetch('http://edserver.herokuapp.com/user/gallery');
+    const res = await fetch('https://api.edgiav.com/user/gallery');
     const data = await res.json();
     return {
         data

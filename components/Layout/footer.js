@@ -10,7 +10,7 @@ class Footer extends Component {
         }
     }
     componentDidMount(){
-        fetch('https://edserver.herokuapp.com/user/category/blog',{
+        fetch('https://api.edgiav.com/user/category/blog',{
             method: "GET",
             headers: {
                 "Accept": "application/json",
@@ -27,7 +27,7 @@ class Footer extends Component {
             console.log(err)
         })
 
-        fetch('https://edserver.herokuapp.com/user/category/gallery',{
+        fetch('https://api.edgiav.com/user/category/gallery',{
             method: "GET",
             headers: {
                 "Accept": "application/json",

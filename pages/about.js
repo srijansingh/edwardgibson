@@ -81,17 +81,19 @@ function HomePage(props) {
         
         <div className="card-container">
             <div className="card">
-                <div className="photo"></div>
+                <div className="photo">
+                    <img src="/logo/edward.png" />
+                </div>
                 <h3>Edward Gibson</h3>
                 <p className="profession">Founder, Edgiav Photography</p>
                 <p className="description">
                     I am an ambitious workaholic, but apart from that, pretty simple person.
                 </p>
                 <div className="connect">
-                    <a href=""><i className="fab fa-facebook-f " ></i></a>
+                    <a href="https://www.facebook.com/edward.yadav.71" target="_blank"><i className="fab fa-facebook-f " ></i></a>
                     <a href=""><i className="fab fa-twitter "   ></i></a>
-                    <a href=""><i className="fab fa-instagram " ></i></a>
-                    <a href=""><i className="fab fa-linkedin-in " ></i></a>
+                    <a href="https://instagram.com/edgiav" target="_blank"><i className="fab fa-instagram " ></i></a>
+                    <a href="https://www.linkedin.com/in/edgiav/" target="_blank"><i className="fab fa-linkedin-in " ></i></a>
                 </div>
             </div>
         </div>
@@ -218,9 +220,12 @@ function HomePage(props) {
             
             .photo{
                 height:250px;
-                background-color: rgb(230, 230, 230);
+                
             }
-            
+            .photo img{
+                width:100%;
+                height:100%;
+            }
             .profession{
                 padding-top:0px;
                 color:var(--header-path-color);

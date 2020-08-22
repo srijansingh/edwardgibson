@@ -2,9 +2,36 @@ import React, { Component } from 'react';
 import styles from "./css/contact.module.css"
 
 class Contact extends Component {
-
+    state = {
+        name : '',
+        email :'',
+        phonenum :'',
+        message :'',
+        isLoading:false
+    }
     handleClick = () => {
-        alert('Clicked')
+        fetch('https://api.edgiav.com/user/customer', {
+            method: "POST",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(this.state)
+        }).then(result => {
+            result.json().then(response => {
+                
+                this.setState({
+                    isLoading: false
+                })
+                
+            })
+        }).catch(err => {
+            // alert("Something went wrong")
+            this.setState({
+                isLoading: false,
+                error: err
+            });
+        });  
     }
     render() {
         return (
@@ -41,26 +68,30 @@ class Contact extends Component {
                             <form>
                                 <div className={styles.control}>
                                 
-                                    <input type="text" placeholder="Enter Name" />
+                                    <input type="text" onChange={()=> this.setState({name:event.target.value})} placeholder="Enter Name"/>
                                 </div>
 
                                 <div className={styles.control}>
                                 
-                                    <input type="email" placeholder="Enter Email"/>
+                                    <input type="email" onChange={()=> this.setState({email:event.target.value})} placeholder="Enter Email"/>
                                 </div>
 
                                 <div className={styles.control}>
                                 
-                                    <input type="number" placeholder="Enter Mobile Number"/>
+                                    <input type="number" onChange={()=> this.setState({phonenum:event.target.value})} placeholder="Enter Mobile Number"/>
                                 </div>
 
                                 <div className={styles.control}>
                                 
-                                    <textarea type="text" placeholder="Your Message"/>
+                                    <textarea type="text" onChange={()=> this.setState({message:event.target.value})} placeholder="Your Message"/>
                                 </div>
 
                                 <div className={styles.control}>
-                                    <button onClick={this.handleClick}>Send Message</button>
+                                    <button onClick={this.handleClick}>
+                                        {
+                                            this.state.isLoading ? 'Sending...' : 'Send Message'
+                                        }
+                                    </button>
                                 </div>
                             </form>
                         </div>

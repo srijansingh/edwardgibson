@@ -5,7 +5,7 @@ import moment from "moment";
 class Blog extends Component {
     render() {
         return (
-            <a href={'/blogs?id=' + this.props.id}>
+            <a className={styles.links} href={'/blogs?id=' + this.props.id}>
             <div className={styles.container}>
 
                 <div className={styles.image}>
@@ -13,7 +13,7 @@ class Blog extends Component {
                 </div>
                 <div className={styles.title}>{this.props.title}</div>
                 <div className={styles.info}>
-                    <span className={styles.date}>{moment(this.props.date).fromNow()}</span>
+                    <span className={styles.date}>{moment(this.props.date).format('DD MMM, YYYY')}</span>
                     <span className={styles.category}>{this.props.category}</span>
                 </div>
                 

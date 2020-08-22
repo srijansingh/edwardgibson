@@ -3,11 +3,14 @@
     flex-direction: column;
     width:320px;
     margin:20px;
-    max-height:400px;
+    max-height:380px;
     height: 100%;
     border:1px solid rgb(224, 214, 214);
+    justify-content: space-between;
 }
-
+.links{
+    text-decoration:none
+}
 .image{
     max-width: 320px;
     max-height:300px;
@@ -27,7 +30,7 @@
 }
 .info{
     display:flex;
-
+    justify-content:'space-between';
     padding:10px;
 }
 .date{

@@ -114,7 +114,7 @@ const Blog = withRouter((props)=> {
   Blog.getInitialProps = async function(context) {
       
   
-    const res = await fetch('http://edserver.herokuapp.com/api/blog/'+context.query.id);
+    const res = await fetch('https://api.edgiav.com/api/blog/'+context.query.id);
     const data = await res.json();
     return {
         data

@@ -101,9 +101,10 @@
     text-align: center;
 }
 
-.link{
+.link {
     text-decoration:none;
-    color:white;  
+    color:white; 
+    cursor: pointer; 
 }
 .link:hover{
     color:#ffff00;
