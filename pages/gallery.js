@@ -85,7 +85,7 @@ function GalleryPage(props) {
   }
   
   GalleryPage.getInitialProps = async function() {
-    const res = await fetch('https://api.edgiav.com/user/gallery');
+    const res = await fetch('https://apis.edgiav.com/user/gallery');
     const data = await res.json();
     return {
         data

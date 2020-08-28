@@ -120,7 +120,7 @@ function HomePage(props) {
   HomePage.getInitialProps = async function() {
       
    try{
-    const res = await fetch('https://api.edgiav.com/api/blog');
+    const res = await fetch('https://apis.edgiav.com/api/blog');
     const data = await res.json();
     return {
         data

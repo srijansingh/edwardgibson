@@ -24,7 +24,19 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
+    "/about": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/blog": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/contact": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/gallery": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],

@@ -10,7 +10,7 @@ class Contact extends Component {
         isLoading:false
     }
     handleClick = () => {
-        fetch('https://api.edgiav.com/user/customer', {
+        fetch('https://apis.edgiav.com/user/customer', {
             method: "POST",
             headers: {
                 "Accept": "application/json",
